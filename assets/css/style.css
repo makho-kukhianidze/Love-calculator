@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+body {
+    background: url('../img/love.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+.container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 35rem;
+}
+form{
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+input{
+    margin-top: 5px;
+    padding: 12px;
+    background: #d6bcf375;
+    border: 2px solid #bf79c9;
+    border-radius: 200px;
+    margin: 5px;
+    color: white;
+    font-weight: 900;
+    outline: none;
+}
+input:focus {
+    background-color: rgba(85, 61, 190, 0.253);
+    border: 2px solid rgb(199, 25, 176);
+  }
+::-webkit-input-placeholder { 
+    color: rgb(201, 198, 198);
+    opacity: 1;
+  }
+::-moz-placeholder { 
+    color: rgb(201, 198, 198);
+    opacity: 1;
+  }
+:-ms-input-placeholder { 
+    color: rgb(201, 198, 198);
+    opacity: 1;
+  }
+::-ms-input-placeholder { 
+    color: rgb(201, 198, 198);
+    opacity: 1;
+  }
+::placeholder { 
+    color: rgb(201, 198, 198);
+    opacity: 1;
+  }
+  
+  :-ms-input-placeholder { 
+    color: rgb(201, 198, 198);
+  }
+  
+  ::-ms-input-placeholder {
+    color: rgb(201, 198, 198);
+  }
+p{
+    background: #bf79c9;
+    padding: 9px;
+    border-radius: 24px;
+    font-size: 19px;
+    color: white;
+    border: 2px solid pink;
+    font-weight: 800;
+    margin-top: 7px;
+}
+button {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.6em 1em;
+    border: 3px solid #FF0072;
+    border-radius: 67px;
+    position: relative;
+    -webkit-box-shadow: 0 2px 10px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 10%);
+            box-shadow: 0 2px 10px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 10%);
+    color: #FF0072;
+    text-decoration: none;
+    -webkit-transition: 0.4s ease all;
+    -o-transition: 0.4s ease all;
+    transition: 0.4s ease all;
+    z-index: 1;
+    cursor: pointer;
+   }
+   button:before {
+    -webkit-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    border-radius: 67px;
+    background-color: #FF0072;
+    z-index: -1;
+   }
+   button:hover, button:focus {
+    color: white;
+   }
+   button:hover:before, button:focus:before {
+    -webkit-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+   }
+   button:active {
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+   }
+ .flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+span{
+    position: absolute;
+    pointer-events: none;
+    -webkit-filter: drop-shadow(0 220px 115px rgba(0,20,20,20,25));
+            filter: drop-shadow(0 220px 115px rgba(0,20,20,20,25));
+    -webkit-animation: fadeInout 1s linear infinite;
+            animation: fadeInout 1s linear infinite;
+}
+span::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url("../img/s.png");
+    background-size: cover;
+    -webkit-animation: moveShape 3s linear infinite;
+            animation: moveShape 3s linear infinite;
+}
+#spanTwo{
+    position: absolute;
+    pointer-events: none;
+    -webkit-filter: drop-shadow(0 220px 115px rgba(0,20,20,20,25));
+            filter: drop-shadow(0 220px 115px rgba(0,20,20,20,25));
+    -webkit-animation: fadeInout 1s linear infinite;
+            animation: fadeInout 1s linear infinite;
+}
+#spanTwo::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url("../img/heart.png");
+    background-size: cover;
+    -webkit-animation: moveShape 3s linear infinite;
+            animation: moveShape 3s linear infinite;
+}
+@-webkit-keyframes moveShape{
+    0%{
+        -webkit-transform:translate(0) rotate(0deg);
+                transform:translate(0) rotate(0deg);
+    }
+    100%{
+        -webkit-transform:translate(100px) rotate(360deg);
+                transform:translate(100px) rotate(360deg);
+    }
+}
+@keyframes moveShape{
+    0%{
+        -webkit-transform:translate(0) rotate(0deg);
+                transform:translate(0) rotate(0deg);
+    }
+    100%{
+        -webkit-transform:translate(100px) rotate(360deg);
+                transform:translate(100px) rotate(360deg);
+    }
+}
+@-webkit-keyframes fadeInout{
+    0%,100%{
+        opacity: 0;
+    }
+    20%,80%{
+        opacity: 1;
+    }
+}
+@keyframes fadeInout{
+    0%,100%{
+        opacity: 0;
+    }
+    20%,80%{
+        opacity: 1;
+    }
+}
+@media only screen and (max-width: 496px) {
+  input {
+    margin-top: 5px;
+    padding: 12px;
+    background: #d6bcf375;
+    border: 2px solid #bf79c9;
+    border-radius: 200px;
+    margin: 5px;
+    color: white;
+    font-weight: 900;
+    outline: none;
+    width: 111px;
+  }
+  p{
+    margin: 6px;
+  }
+}
